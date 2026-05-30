@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fahrzeug 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Fahrzeuge & Lager</div>
+    <nav class="topnav">
+      <a href="index.html">Übersicht</a>
+      <a href="fahrzeug1.html">Fahrzeug 1</a>
+      <a href="fahrzeug2.html" class="active">Fahrzeug 2</a>
+      <a href="lager1.html">Lager 1</a>
+    </nav>
+  </header>
+
+  <div class="wrap">
+    <main class="hero">
+      <h1>Fahrzeug 2</h1>
+      <p>Trage hier ein, was und wie viel im Fahrzeug ist.</p>
+    </main>
+
+    <section class="card">
+      <form>
+        <label for="inhalt2">Was ist drin?</label>
+        <textarea id="inhalt2" placeholder="z. B. Kabel, Geräte, Zubehör"></textarea>
+
+        <label for="menge2">Menge</label>
+        <input id="menge2" type="text" placeholder="z. B. 8 Stück" />
+
+        <div class="actions">
+          <button type="button" class="btn primary">Speichern</button>
+          <a href="index.html" class="btn ghost">Zurück</a>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
