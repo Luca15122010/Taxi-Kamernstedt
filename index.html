@@ -4,52 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fahrzeuge & Lager</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="hero">
+  <header class="topbar">
+    <div class="brand">Fahrzeuge & Lager</div>
+    <nav class="topnav">
+      <a href="index.html" class="active">Übersicht</a>
+    </nav>
+  </header>
+
+  <div class="wrap">
+    <main class="hero">
       <h1>Fahrzeuge & Lager</h1>
-      <p>Hier kannst du Inhalte und Mengen übersichtlich eintragen.</p>
-    </header>
-
-    <main class="grid">
-      <section class="card">
-        <h2>Fahrzeug 1</h2>
-
-        <label for="inhalt1">Was ist drin?</label>
-        <textarea id="inhalt1" placeholder="z. B. Werkzeug, Material, Boxen"></textarea>
-
-        <label for="menge1">Menge</label>
-        <input id="menge1" type="text" placeholder="z. B. 12 Stück" />
-
-        <button type="button">Speichern</button>
-      </section>
-
-      <section class="card">
-        <h2>Fahrzeug 2</h2>
-
-        <label for="inhalt2">Was ist drin?</label>
-        <textarea id="inhalt2" placeholder="z. B. Kabel, Geräte, Zubehör"></textarea>
-
-        <label for="menge2">Menge</label>
-        <input id="menge2" type="text" placeholder="z. B. 8 Stück" />
-
-        <button type="button">Speichern</button>
-      </section>
-
-      <section class="card">
-        <h2>Lager 1</h2>
-
-        <label for="inhalt3">Was ist drin?</label>
-        <textarea id="inhalt3" placeholder="z. B. Ersatzteile, Kartons, Zubehör"></textarea>
-
-        <label for="menge3">Menge</label>
-        <input id="menge3" type="text" placeholder="z. B. 50 Stück" />
-
-        <button type="button">Speichern</button>
-      </section>
+      <p>Hier kannst du Inhalte und Mengen in Fahrzeugen und Lagern übersichtlich verwalten.</p>
     </main>
+
+    <section class="nav-grid">
+      <a class="nav-card" href="#">
+        <span class="nav-icon">1</span>
+        <span class="nav-title">Fahrzeug 1</span>
+        <span class="nav-text">Was ist drin? Wie viel?</span>
+      </a>
+
+      <a class="nav-card" href="#">
+        <span class="nav-icon">2</span>
+        <span class="nav-title">Fahrzeug 2</span>
+        <span class="nav-text">Was ist drin? Wie viel?</span>
+      </a>
+
+      <a class="nav-card" href="#">
+        <span class="nav-icon">3</span>
+        <span class="nav-title">Lager 1</span>
+        <span class="nav-text">Was ist drin? Wie viel?</span>
+      </a>
+
+      <a class="nav-card" href="#">
+        <span class="nav-icon">+</span>
+        <span class="nav-title">Neues Fahrzeug</span>
+        <span class="nav-text">Neuen Eintrag anlegen</span>
+      </a>
+    </section>
   </div>
 </body>
 </html>
