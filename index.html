@@ -7,57 +7,70 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="background"></div>
+  <div class="bg-glow bg-one"></div>
+  <div class="bg-glow bg-two"></div>
 
   <div class="container">
     <header class="hero">
-      <div class="badge">Inventarübersicht</div>
+      <div class="hero-top">
+        <span class="pill">Inventarverwaltung</span>
+        <span class="pill pill-light">Übersicht</span>
+      </div>
       <h1>Fahrzeuge & Lager</h1>
-      <p>Verwalte Inhalte, Mengen und Bestände übersichtlich in einzelnen Karten.</p>
+      <p>Verwalte Inhalt, Menge und Bestände in einer klaren, modernen Oberfläche.</p>
     </header>
 
     <main class="grid">
       <section class="card">
         <div class="card-head">
-          <h2>Fahrzeug 1</h2>
-          <span class="tag">Aktiv</span>
+          <div>
+            <h2>Fahrzeug 1</h2>
+            <span class="sub">Bereich A</span>
+          </div>
+          <span class="status active">Aktiv</span>
         </div>
 
-        <label>Was ist drin?</label>
-        <textarea placeholder="z. B. Werkzeug, Material, Kisten"></textarea>
+        <label for="f1-inhalt">Was ist drin?</label>
+        <textarea id="f1-inhalt" placeholder="z. B. Werkzeug, Material, Boxen"></textarea>
 
-        <label>Menge</label>
-        <input type="text" placeholder="z. B. 12 Stück" />
+        <label for="f1-menge">Menge</label>
+        <input id="f1-menge" type="text" placeholder="z. B. 12 Stück" />
 
         <button type="button">Speichern</button>
       </section>
 
       <section class="card">
         <div class="card-head">
-          <h2>Fahrzeug 2</h2>
-          <span class="tag">Bereit</span>
+          <div>
+            <h2>Fahrzeug 2</h2>
+            <span class="sub">Bereich B</span>
+          </div>
+          <span class="status ready">Bereit</span>
         </div>
 
-        <label>Was ist drin?</label>
-        <textarea placeholder="z. B. Kabel, Geräte, Zubehör"></textarea>
+        <label for="f2-inhalt">Was ist drin?</label>
+        <textarea id="f2-inhalt" placeholder="z. B. Kabel, Geräte, Zubehör"></textarea>
 
-        <label>Menge</label>
-        <input type="text" placeholder="z. B. 8 Stück" />
+        <label for="f2-menge">Menge</label>
+        <input id="f2-menge" type="text" placeholder="z. B. 8 Stück" />
 
         <button type="button">Speichern</button>
       </section>
 
       <section class="card">
         <div class="card-head">
-          <h2>Lager 1</h2>
-          <span class="tag">Bestand</span>
+          <div>
+            <h2>Lager 1</h2>
+            <span class="sub">Hauptlager</span>
+          </div>
+          <span class="status stock">Bestand</span>
         </div>
 
-        <label>Was ist drin?</label>
-        <textarea placeholder="z. B. Ersatzteile, Boxen, Kartons"></textarea>
+        <label for="l1-inhalt">Was ist drin?</label>
+        <textarea id="l1-inhalt" placeholder="z. B. Ersatzteile, Kartons, Zubehör"></textarea>
 
-        <label>Menge</label>
-        <input type="text" placeholder="z. B. 50 Stück" />
+        <label for="l1-menge">Menge</label>
+        <input id="l1-menge" type="text" placeholder="z. B. 50 Stück" />
 
         <button type="button">Speichern</button>
       </section>
