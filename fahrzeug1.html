@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fahrzeug 1</title>
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header class="topbar">
@@ -20,22 +21,22 @@
   <div class="wrap">
     <main class="hero">
       <h1>Fahrzeug 1</h1>
-      <p>Trage hier ein, was und wie viel im Fahrzeug ist.</p>
+      <p>Trage hier mehrere Sachen ein, die im Fahrzeug sind.</p>
     </main>
 
     <section class="card">
-      <form>
-        <label for="inhalt1">Was ist drin?</label>
-        <textarea id="inhalt1" placeholder="z. B. Werkzeug, Material, Boxen"></textarea>
+      <div class="form-row">
+        <input id="eintragWas" type="text" placeholder="Was? z. B. Werkzeug" />
+        <input id="eintragMenge" type="text" placeholder="Menge? z. B. 12 Stück" />
+        <button id="addBtn" type="button" class="btn primary small">Hinzufügen</button>
+      </div>
 
-        <label for="menge1">Menge</label>
-        <input id="menge1" type="text" placeholder="z. B. 12 Stück" />
+      <div id="eintragList" class="eintrag-list"></div>
 
-        <div class="actions">
-          <button type="button" class="btn primary">Speichern</button>
-          <a href="index.html" class="btn ghost">Zurück</a>
-        </div>
-      </form>
+      <div class="actions">
+        <button id="saveAllBtn" type="button" class="btn primary">Alle speichern</button>
+        <a href="index.html" class="btn ghost">Zurück</a>
+      </div>
     </section>
   </div>
 </body>
